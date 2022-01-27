@@ -1,3 +1,5 @@
+Sample hosted at [flutterweb-101.web.app](https://flutterweb-101.web.app/).
+
 1. Creat a Flutter web project
 
 ```console
@@ -19,3 +21,7 @@ flutter create --platforms=web .
    - When running `firebase init`, choose `Hosting` and `GitHub Action deploys`.
    - When going through the configuration, set `"public"` to `build/web`.
    - Change the build command to `flutter build web`.
+
+1. Update `.github/workflows` for Flutter
+
+   - TODO
