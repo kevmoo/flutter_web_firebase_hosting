@@ -24,4 +24,17 @@ flutter create --platforms=web .
 
 1. Update `.github/workflows` for Flutter
 
-   - TODO
+   - Update the two generated `firebase-hosting-` files to include Flutter
+     setup:
+
+   ```yaml
+   steps:
+      # This has to come before `flutter bulid web`
+      - uses: subosito/flutter-action@v2.2.1
+      with:
+         # Defining the channel is optional - I'm using beta
+         channel: beta
+         # Setting cache is also optional, although this does speed up builds!
+         cache: true
+      - uses: actions/checkout@v2
+   ```
