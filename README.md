@@ -10,7 +10,12 @@ flutter create --platforms=web .
    - Click on "Add project"
    - Follow the instructions
    - Once the project is created...
-   - Click on "Hosting" on the left navigation.
+
+1. Enable hosting
+
+   - Click on "Hosting" on the left navigation (on the Firebase project page)
    - Follow the instructions to install the Firebase CLI tools (if you don't
      already have them installed).
-   - When running `firebase init`, choose `Hosting`.
+   - When running `firebase init`, choose `Hosting` and `GitHub Action deploys`.
+   - When going through the configuration, set `"public"` to `build/web`.
+   - Change the build command to `flutter build web`.
