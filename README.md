@@ -1,16 +1,16 @@
-# flutter_web_firebase_hosting
+1. Creat a Flutter web project
 
-A new Flutter project.
+```console
+flutter create --platforms=web .
+```
 
-## Getting Started
+1. Create a Firebase project
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   - Go to [console.firebase.google.com](https://console.firebase.google.com/)
+   - Click on "Add project"
+   - Follow the instructions
+   - Once the project is created...
+   - Click on "Hosting" on the left navigation.
+   - Follow the instructions to install the Firebase CLI tools (if you don't
+     already have them installed).
+   - When running `firebase init`, choose `Hosting`.
